@@ -4,10 +4,15 @@ import re
 from dotenv import load_dotenv
 from hybrid_search import hybrid_search, print_search_results
 import sys
+import importlib
 
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-from hybrid_search import hybrid_search, print_search_results
+
+hybrid_search_module = importlib.import_module("hybrid_search")
+hybrid_search = hybrid_search_module.hybrid_search
+print_search_results = hybrid_search_module.print_search_results
+
 
 
 # 환경 변수 로드
