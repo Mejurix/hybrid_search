@@ -11,7 +11,7 @@ load_dotenv()
 
 # Pinecone 설정
 PINECONE_API_KEY = st.secrets["PINECONE_API_KEY"]
-PINECONE_ENVIRONMENT = st.secrets("PINECONE_ENVIRONMENT", "us-east-1")
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 
 
 # 인덱스 이름 설정
