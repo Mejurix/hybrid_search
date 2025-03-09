@@ -1,18 +1,8 @@
-import streamlit as st
 import os
 import re
 from dotenv import load_dotenv
 import sys
-import importlib
-
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-
-
-hybrid_search_module = importlib.import_module("hybrid_search")
-hybrid_search = hybrid_search_module.hybrid_search
-print_search_results = hybrid_search_module.print_search_results
-
-
+import hybrid_search
 
 # 환경 변수 로드
 load_dotenv()
