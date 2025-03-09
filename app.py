@@ -3,6 +3,12 @@ import os
 import re
 from dotenv import load_dotenv
 from hybrid_search import hybrid_search, print_search_results
+import sys
+
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
+from hybrid_search import hybrid_search, print_search_results
+
 
 # 환경 변수 로드
 load_dotenv()
