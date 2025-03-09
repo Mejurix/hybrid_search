@@ -9,8 +9,9 @@ from langchain.prompts import ChatPromptTemplate
 load_dotenv()
 
 # Pinecone 설정
-PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
-PINECONE_ENVIRONMENT = os.getenv("PINECONE_ENVIRONMENT", "us-east-1")
+PINECONE_API_KEY = st.secrets["PINECONE_API_KEY"]
+PINECONE_ENVIRONMENT = st.secrets("PINECONE_ENVIRONMENT", "us-east-1")
+
 
 # 인덱스 이름 설정
 PRODUCTS_INDEX_NAME = "sivillage-products"
