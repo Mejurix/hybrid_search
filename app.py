@@ -2,7 +2,6 @@ import streamlit as st
 import os
 import re
 from dotenv import load_dotenv
-from hybrid_search import hybrid_search, print_search_results
 import sys
 import importlib
 
